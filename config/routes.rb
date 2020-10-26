@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root to: 'posts#index'
-  post 'p', to:'posts#create'
+  post 'posts', to:'posts#create'
+  get 'posts/:id', to:'posts#checked'
 end
